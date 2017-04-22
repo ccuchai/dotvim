@@ -53,9 +53,22 @@ Compiling YCM without semantic support for C-family languages:
     $ cd ~/.vim/bundle/YouCompleteMe
     $ ./install.sh
 
+Compiling YCM with semantic support for Go languages:
+
+    $ cd ~/.vim/bundle/YouCompleteMe
+    $ ./install.py --gocode-completer
+
 For more installation detail, please see the document of [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
 All done! Hope you enjoy it.
+
+F & Q
+=====
+
+libtinfo.so missing for YCM in arch linux
+
+    $ ln -s /usr/lib/libncursesw.so.6 /usr/lib/libtinfo.so.5
+
 
 Demos
 =====
