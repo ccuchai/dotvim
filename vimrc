@@ -239,30 +239,22 @@ let g:tagbar_type_javascript = {
 \ }
 " -------------------------
 
-" --- EasyGrep ------------
-" <leader>vv - Grep for the word under the cursor
-" <leader>va - Like vv, but add to existing list
-" <leader>vo - Select the files to search in and set grep options
-" <Leader>vr - Perform a global search search on the word under the cursor
-"              and prompt for a pattern with which to replace it.
-map <leader>vf <esc>:Grep 
-let g:EasyGrepRecursive = 1
-let g:EasyGrepCommand = 1
-let g:EasyGrepIgnoreCase = 1
+" --- easymotion ------------
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
 
-au BufNewFile,BufRead *.handlebars set filetype=html
-au BufNewFile,BufRead *.bash set filetype=sh
+nmap s <Plug>(easymotion-overwin-f2)
 
-if has("autocmd")
-autocmd BufRead *.txt set tw=78
-autocmd BufReadPost *
-    \ if line("'\"") > 0 && line ("'\"") <= line("$") |
-    \   exe "normal g'\"" |
-    \ endif
-endif
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
-autocmd Filetype css setlocal ts=2 sw=2 expandtab
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
 
 " --- vim-go ------------
 let g:go_fmt_autosave = 0
