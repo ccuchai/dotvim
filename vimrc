@@ -28,6 +28,7 @@ Bundle 'tagbar'
 Bundle 'fcamel/gj'
 Bundle 'bling/vim-airline'
 Bundle 'pangloss/vim-javascript'
+Bundle 'elzr/vim-json'
 
 " -----------------------------------------
 " General Settings
@@ -263,3 +264,6 @@ let g:go_fmt_autosave = 0
 " --- vim-airline ------------
 set laststatus=2
 let g:airline_powerline_fonts = 1
+
+" --- vim-json ------------
+let g:vim_json_syntax_conceal = 0
