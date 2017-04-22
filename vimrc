@@ -71,6 +71,7 @@ filetype plugin on      " Enable filetype-specific plugins
 syntax on	            " use syntax
 set t_Co=256            " 256 color mode
 colorscheme hybrid
+set background=dark
 set t_ut=               " fix tmux color
 
 " TAB setting
