@@ -15,20 +15,20 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'fatih/vim-go'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Valloric/ListToggle'
-Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'ctags.vim'
 Bundle 'taglist.vim'
 Bundle 'tagbar'
 Bundle 'fcamel/gj'
 Bundle 'bling/vim-airline'
-Bundle 'pangloss/vim-javascript'
+Bundle 'tpope/vim-fugitive'
 Bundle 'elzr/vim-json'
+Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'fatih/vim-go'
 
 " -----------------------------------------
 " General Settings
