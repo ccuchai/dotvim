@@ -75,21 +75,28 @@ colorscheme hybrid
 set background=dark
 set t_ut=               " fix tmux color
 
-" TAB setting
-set tabstop=4
-set softtabstop=4	    " the default tab space size=4
-set shiftwidth=4	    " the default autoindenting space size=4
-"set expandtab	        " replace <TAB> with spaces
-" show tab
-
-au BufNewFile,BufRead *.handlebars set filetype=html
-au BufNewFile,BufRead *.bash set filetype=sh
-au FileType Makefile set noexpandtab
-au Filetype html setlocal ts=2 sw=2 expandtab
-
 " auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd! bufwritepost vimrc source ~/.vimrc
+
+" -----------------------------------------
+" Indent Settings
+" -----------------------------------------
+" Default TAB settings
+set tabstop=4
+set softtabstop=4	    " the default tab space size=4
+set shiftwidth=4	    " the default autoindenting space size=4
+set expandtab	        " replace <TAB> with spaces
+
+" File format alias
+au BufNewFile,BufRead *.handlebars set filetype=html
+au BufNewFile,BufRead *.bash set filetype=sh
+
+" Customize TAB settings
+au FileType Makefile setlocal noexpandtab
+au FileType go       setlocal noexpandtab
+au Filetype html     setlocal ts=2 sw=2 expandtab
+
 "----------------------------------------------------------------------- 
 " ENCODING SETTINGS
 "----------------------------------------------------------------------- 
