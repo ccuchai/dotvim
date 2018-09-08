@@ -26,10 +26,11 @@ Bundle 'tagbar'
 Bundle 'fcamel/gj'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-sleuth'
+" Bundle 'tpope/vim-sleuth'
 Bundle 'elzr/vim-json'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'fatih/vim-go'
+Bundle 'wakatime/vim-wakatime'
 
 " -----------------------------------------
 " General Settings
